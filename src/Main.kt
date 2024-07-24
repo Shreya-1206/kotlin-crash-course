@@ -87,9 +87,50 @@ fun main() {
     }
 
     for (i in 1..20) {
-        print(i)
+        println(i)
     }
 
+  //when expression
+    val xy = 8
+
+    when(xy){
+     in 1..4 -> println("value is in range 1 to 4")
+     in 5..10 -> println("value is in range 5 to 10")
+        else -> {
+            println("Value is not where")
+        }
+    }
+
+    /// Functions
+    fun printNum() {
+        for(i in 1..30){
+            println(i)
+        }
+    }
+
+    fun isEven(number : Int) : Boolean{
+        return number % 2 == 0
+    }
+
+    //extention function
+    fun Int.isOdd() : Boolean{
+        return this % 2 == 1
+    }
+
+    printNum()
+    val even = isEven(9)
+    println(even)
+    val odd =9
+    println(odd.isOdd())
+
+
+    ///classInstance
+    val dog = Dog()
+    dog.makeSound()
+
+
+    val cat = Cat()
+    cat.makeSound()
 
 
 }
