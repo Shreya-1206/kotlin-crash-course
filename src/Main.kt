@@ -63,4 +63,33 @@ fun main() {
     val sum = num1.toInt() + num2.toInt()
     println("A better way to calculate - $sum")
 
+
+
+  // Lists
+  val shoppingList = mutableListOf<String>("Face Wash", "Body Wash","Diet Coke")
+    println(shoppingList[1]) //fetch element using index
+   shoppingList.add("Highlighter") // add element
+    println("Full shopping list : $shoppingList")
+    // change he list to mutable so we can add the item
+
+
+
+
+    // Iterate through list
+    var j = 0
+    while(j < shoppingList.size){
+        println(shoppingList[j])
+        j++
+    }
+
+    for(x in shoppingList) {
+        println("For Loop Used to Print - $x")
+    }
+
+    for (i in 1..20) {
+        print(i)
+    }
+
+
+
 }
