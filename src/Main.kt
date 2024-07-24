@@ -34,7 +34,33 @@ fun main() {
     println("The ans for am Adult Plus Programmer is $amAdultProgrammer")
 
 
+//    conditions
+    val z = 1+7
+    if (z == 10){
+       println("Yes , Z is 10")
+    }else  if(z == 9){
+        println("Okay , Z is 9")
+    }else {
+        println("Z is neither 10 or 9 ")
+    }
+
+   //shortcut of if
+   val u = if(z == 9) "yess" else "no"
+    println(u)
+
+   // null value
+   val k : Int? = null
+   println("Here k is Null  : $k")
+
+   val i = readLine()
+   val o = readLine()
+   val h = i!!.toInt() + o!!.toInt()  // may crase our code so use the below one
+    println("Sum i + o is $h")
 
 
+  val num1 = readLine() ?: "0"
+    val num2= readLine() ?: "0"
+    val sum = num1.toInt() + num2.toInt()
+    println("A better way to calculate - $sum")
 
 }
