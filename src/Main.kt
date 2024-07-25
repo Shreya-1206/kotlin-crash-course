@@ -133,4 +133,25 @@ fun main() {
     cat.makeSound()
 
 
+
+    /// Anonymous function
+    var bear  = object: Animal("Camme Bear", 4){
+        override fun makeSound() {
+            println("Roarrhhhhh !!!")
+        }
+    }
+
+    println(bear.makeSound())
+
+    //try and catch
+    val number1 = readLine()  ?: "0"
+    val number2 = readLine()  ?: "0"
+    val parsedNumber = try{
+      number1.toInt() + number2.toInt()
+    }catch(e : Exception) {
+        0
+    }
+
+    println(parsedNumber)
+
 }
